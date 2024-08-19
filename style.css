@@ -1,0 +1,143 @@
+body{
+    padding-left: 80px;
+    padding-right: 60px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inria Serif", serif;
+    background: url(line.svg);
+    background-size: 1250px auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding-top: 40px;
+}
+
+.logo{
+    height: 45px;
+}
+
+/*FIRST*/
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.left{
+    width: 50%;
+}
+
+.heropicture{
+    padding-right: 130px;
+    
+}
+
+.title{
+    padding-top: 160px;
+    font-size: 70px;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+.title_right{
+    padding-top: 160px;
+    font-size: 70px;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: right;
+}
+
+.highlight{
+    color: white;
+    background-color: #8373E4;
+    padding: 0 4px 4px 4px; 
+    line-height: 1.5;
+   
+}
+
+.button_div{
+    display: flex;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.download_btn{
+    height: 120px;
+}
+
+.review{
+    padding-top: 50px;
+}
+
+.profilpic{
+    height: 60px;
+}
+
+.review_stars{
+    display: flex;
+}
+
+.star{
+    height: 50px;
+    padding-top: 20px;
+}
+
+.review_text{
+    font-size: 25px;
+    margin: 0;
+}
+
+/*SECOND*/
+
+.second_content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center; 
+    height: 100vh;
+}
+
+.second_text{
+    font-size: 40px;
+    float: right;
+}
+
+.swiping_pic{
+    padding-top: 30px;
+}
+
+
+/*THIRD*/
+
+.third_title{
+    margin: auto;
+}
+
+.third_content{
+    display: flex;
+    padding-top: 150px ;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.button_div2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
