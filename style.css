@@ -8,6 +8,7 @@ body{
     background-size: 1250px auto;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .container{
@@ -113,9 +114,6 @@ body{
 
 /*THIRD*/
 
-.third_title{
-    margin: auto;
-}
 
 .third_content{
     display: flex;
@@ -132,9 +130,50 @@ body{
 }
 
 
+/*RESZPONZÍV*/
 
+@media (max-width: 850px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
+    .first, .second_content, .third_content {
+        flex-direction: column; 
+        align-items: center; 
+        height: auto;
+        
+    }
 
+    .title, .title_right {
+        font-size: 50px; 
+        padding-top: 100px;
+        
+    }
+
+    .heropicture, .swiping_pic {
+        padding-right: 0; /* Kép paddingjének eltávolítása */
+        max-width: 100%;
+        height: auto;
+    }
+
+    .download_btn {
+        height: 100px; /* Gombok méretének csökkentése */
+    }
+
+    .second_text{
+        font-size: 30px; /* Más szövegek méretének csökkentése */
+        text-align: center;
+        
+    }
+    
+    .button_div2 {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+}
 
 
 
