@@ -1,3 +1,27 @@
+:root{
+    --var-dl-btn-width: min(100%, 17em);
+}
+html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+::selection{
+    background-color: #8273e4b2;
+}
+img:not(.download_btn){
+    user-select: none;
+    -webkit-user-drag: none;
+}
+p,h1,h2,h3,h4{
+    text-shadow: 3px 2px white;
+}
+span.highlight{
+    text-shadow: none;
+}
+.download_btn{
+    -webkit-user-drag: none;
+}
 body{
     padding-left: 80px;
     padding-right: 60px;
@@ -9,9 +33,9 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
-
 img { 
     display: block; 
     max-width: 100%; 
@@ -63,17 +87,25 @@ img {
     line-height: 1.5;
    
 }
-
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
 .button_div{
     display: flex;
     gap: 20px;
     padding-top: 100px;
 }
-
-.download_btn{
-    height: 120px;
+a{
+    width: var(--var-dl-btn-width);
 }
 
+.download_btn{
+    /* height: 120px; */
+    width: var(--var-dl-btn-width);  
+}
 .review{
     padding-top: 50px;
 }
@@ -163,7 +195,8 @@ img {
     }
 
     .download_btn {
-        height: 100px; 
+        height: unset;
+        width: min(40vw, 40em); 
     }
 
     .second_text{
@@ -175,13 +208,38 @@ img {
     .button_div2 {
         flex-direction: row;
         justify-content: center;
+        width: 100%;
         gap: 10px;
     }
-    
+    #shipping-pic{
+        padding-left: 16vw;
+    }
+    .title_right{
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+    .left, .right{
+        width: 100%;
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+    }
+    .first h1, .first p{
+        text-align: center;
+    }
+    .first .review{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .first .button_div{
+        align-items: center;
+        justify-content: center;
+    }
+    body{
+        background-position: right;
+    }
 }
-
-
-
-
-
-
